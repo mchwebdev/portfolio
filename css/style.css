@@ -19,20 +19,30 @@ a {
   font-weight: 200;
 }
 
-/* 1.MAIN CONTAINER */
+/* 1.WRAPPER */
 
-#container {
+#wrapper {
   width: auto;
   max-width: 850px;
-  margin: 1em auto 2em;
+  margin: 1em auto 0;
   height: auto;
   display: flex;
   flex-direction: column;
 }
 
-/* 2.CONTAINER SUB SECTIONS */
+/* 2.MAIN CONTAINER */
 
-/* 2.1.Main sections */
+#container {
+  width: auto;
+  max-width: 850px;
+  height: calc(100% - 3.5em);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3.CONTAINER SUB SECTIONS */
+
+/* 3.1.Main sections */
 
 #header {
   width: 100%;
@@ -51,9 +61,17 @@ a {
   flex-direction: column;
 }
 
-/* 3.MAIN SUB SECTIONS */
+#footer {
+  height: 3.5em;
+  text-align: center;
+  padding: 0.7em 0 1em;
+  margin: 2em 0 0;
+  border-top: 3px solid #d3d3d3;
+}
 
-/* 3.1.Header children */
+/* 4.MAIN SUB SECTIONS */
+
+/* 4.1.Header children */
 
 #logo {
   width: 6em;
@@ -83,7 +101,7 @@ a {
   font-size: 2em;
 }
 
-/* 3.2.Content children */
+/* 4.2.Content children */
 
 #background {
   width: 100%;
@@ -105,7 +123,7 @@ a {
   width: 100%;
   height: auto;
   font-size: 3.7em;
-  padding: 0 0 0.2em 0.2em;
+  padding: 0 0 0.2em;
 }
 
 #portfolio-work {
@@ -181,19 +199,37 @@ a {
   font-size: 1.1em;
 }
 
+/* Footer */
+
+.svg-inline--fa {
+  padding: 0px 0.2em;
+}
+
+.social-links {
+  font-size: 3em;
+  color: #7d97ad;
+}
+
+.social-links:hover {
+  font-size: 3.3em;
+  text-decoration: none;
+  color: #9fc2e0;
+}
+
 /* Set media queries for responsiveness */
 
 @media screen and (min-width: 481px) and (max-width: 870px) {
-  #container {
-    margin: 1em 1em 2em;
+  #wrapper {
+    margin: 0 1em;
     /* Version without left and right margin
     margin: 1em 0 0; */
   }
+
 }
 
 @media screen and (max-width: 480px) {
-  #container {
-    margin: 1em 1em 0;
+  #wrapper {
+    margin: 0 1em;
     /* Version without left and right margin
     margin: 1em 0 0; */
   }
