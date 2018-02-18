@@ -129,8 +129,7 @@ a {
 
 .thumbnail-link {
   width: 100%;
-  min-height: 70%;
-  max-height: 70%;
+  height: auto;
 }
 
 .thumbnail {
