@@ -133,6 +133,10 @@ h1, h2, p, a {
   opacity: 0.9;
 }
 
+.thumbnail:hover {
+  opacity: 0.6;
+}
+
 .work-infos {
   width: 100%;
   height: auto;
