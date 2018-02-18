@@ -151,9 +151,15 @@ h1, h2, p, a {
   height: auto;
   text-align: center;
   color: #2d3c49;
+  text-decoration: none;
   font-size: 2.5em;
   line-height: 1em;
   padding: 0.3em 0;
+}
+
+.work-title:hover {
+  color: #bebebe;
+  font-size: 2.8em;
 }
 
 .work-link {
