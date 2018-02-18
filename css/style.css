@@ -1,0 +1,232 @@
+* {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #7d97ad;
+}
+
+h1, h2, p, a {
+  font-family: "Amatic SC", cursive;
+  font-weight: 200;
+}
+
+/* 1.MAIN CONTAINER */
+
+#container {
+  width: auto;
+  max-width: 850px;
+  margin: 1em auto 2em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2.CONTAINER SUB SECTIONS */
+
+/* 2.1.Main sections */
+
+#header {
+  width: 100%;
+  height: 6.2em;
+  padding: 1em 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #d3d3d3;
+}
+
+#content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3.MAIN SUB SECTIONS */
+
+/* 3.1.Header children */
+
+#logo {
+  width: 6em;
+  height: 6em;
+  margin: 0 0 0 0.2em;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+#infos {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-align: right;
+  width: calc(100% - 6em);
+  height: 6em;
+}
+
+/* Infos children */
+
+.name {
+  height: 3em;
+  font-size: 3em;
+}
+
+.description {
+  height: 3em;
+  font-size: 2em;
+}
+
+/* 3.2.Content children */
+
+#background {
+  width: 100%;
+  height: 75%;
+  margin: 1.3em 0;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+/* Portfolio children */
+
+#portfolio-title {
+  width: 100%;
+  height: auto;
+  font-size: 3.7em;
+  padding: 0 0 0.2em 0.2em;
+}
+
+#portfolio-work {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Portfolio-work children */
+
+.work {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 31%;
+}
+
+/* Work children */
+
+.thumbnail-link {
+  width: 100%;
+  height: 70%;
+}
+
+.thumbnail {
+  opacity: 0.9;
+}
+
+.work-infos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Work-info children */
+
+.work-title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #2d3c49;
+  font-size: 2.5em;
+  line-height: 1em;
+  padding: 0.3em 0;
+}
+
+.work-link {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+
+.work-link a {
+  color: #2d3c49;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* Set media queries for responsiveness */
+
+@media screen and (min-width: 481px) and (max-width: 870px) {
+  #container {
+    margin: 1em 1em 2em;
+    /* Version without left and right margin
+    margin: 1em 0 0; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #container {
+    margin: 1em 1em 0;
+    /* Version without left and right margin
+    margin: 1em 0 0; */
+  }
+
+  #header {
+    width: 100%;
+    height: 4.4em;
+    /* Version without margin on the container, therefore padding added to the header
+    width: calc(100% - 2em);
+    padding: 1em; */
+  }
+
+  .name {
+    height: 1.4em;
+    font-size: 1.8em;
+  }
+
+  .description {
+    height: 1.5em;
+    font-size: 1.3em;
+  }
+
+  #logo {
+    width: 4em;
+    height: 4em;
+    padding: 0.2em;
+  }
+
+  #background {
+    margin: 0.8em 0;
+  }
+
+  #portfolio-title {
+    text-align: center;
+    padding: 0;
+  }
+
+  #portfolio-work {
+    flex-direction: column;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .thumbnail-link {
+    width: 100%;
+    height: 70%;
+  }
+
+  .work-link {
+    padding: 0 0 2em;
+  }
+}
